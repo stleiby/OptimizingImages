@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>optimizing-images.html</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-block {
+      display: inline-block;
+      width: 45%;
+      margin: 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .image-block img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-block p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .grid img {
+      width: 200px;
+      height: auto;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Optimizing Images</h1>
+  <h2>Comparison of Web Formats</h2>
+
+  <div class="two-column">
+    <div class="image-block">
+      <img src="photo-jpg-80.jpg" alt="JPEG 80">
+      <p><strong>JPEG Quality 80</strong><br>File size: ~XX KB<br>Good quality, moderate size</p>
+    </div>
+
+    <div class="image-block">
+      <img src="photo-jpg-40.jpg" alt="JPEG 40">
+      <p><strong>JPEG Quality 40</strong><br>File size: ~XX KB<br>Lower quality, smaller size</p>
+    </div>
+
+    <div class="image-block">
+      <img src="photo-gif-256.gif" alt="GIF 256">
+      <p><strong>GIF - 256 Colors</strong><br>File size: ~XX KB<br>Full palette, okay for simple images</p>
+    </div>
+
+    <div class="image-block">
+      <img src="photo-gif-64.gif" alt="GIF 64">
+      <p><strong>GIF - 64 Colors</strong><br>File size: ~XX KB<br>Reduced colors, smaller file</p>
+    </div>
+
+    <div class="image-block">
+      <img src="photo-gif-8.gif" alt="GIF 8">
+      <p><strong>GIF - 8 Colors</strong><br>File size: ~XX KB<br>Very limited colors, smallest size</p>
+    </div>
+
+    <div class="image-block">
+      <img src="photo-png-24.png" alt="PNG 24">
+      <p><strong>PNG-24</strong><br>File size: ~XX KB<br>High quality, larger file</p>
+    </div>
+  </div>
+
+  <h2>10 Optimized Images from Unsplash</h2>
+
+  <div class="grid">
+    <img src="nature-forest.jpg" alt="Nature Forest">
+    <img src="city-night.jpg" alt="City Night">
+    <img src="ocean-waves.jpg" alt="Ocean Waves">
+    <img src="desert-sunset.jpg" alt="Desert Sunset">
+    <img src="mountain-view.jpg" alt="Mountain View">
+    <img src="street-market.jpg" alt="Street Market">
+    <img src="cat-closeup.jpg" alt="Cat Closeup">
+    <img src="coffee-cup.jpg" alt="Coffee Cup">
+    <img src="road-trip.jpg" alt="Road Trip">
+    <img src="sunflower-field.jpg" alt="Sunflower Field">
+  </div>
+
+</body>
+</html>
